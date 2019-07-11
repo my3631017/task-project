@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<taglib >
+    <tlib-version>1.1</tlib-version>
+    <jsp-version>1.2</jsp-version>
+
+    <short-name>date</short-name><!-- 标签库的简称，jsp引入的时候要用 -->
+    <uri>http://vmaxtam.com/mytag</uri><!-- 你标签库的引用uri -->
+    <tag>
+        <name>dateFormat</name><!-- 标签库具体引用的tag，标签引用后，使用的时候要用 -->
+        <tag-class>com.tools.TimeFormat</tag-class><!-- 刚才写的那个时间转换工具类-->
+        <attribute>
+            <name>value</name><!-- Long类型时间参数-->
+            <required>true</required>
+            <rtexprvalue>true</rtexprvalue>
+        </attribute>
+        <attribute>
+            <name>pattern</name><!-- 转换后的格式-->
+            <required>true</required>
+            <rtexprvalue>true</rtexprvalue>
+        </attribute>
+    </tag>
+</taglib>
